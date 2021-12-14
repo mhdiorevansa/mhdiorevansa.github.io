@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="travel website">
+    <meta name="author" content="Muhammad Dio Revansa">
+    <meta name="keywords" content="travel,booking,wisata,travelweb">
+    <title>D-Travel</title>
+    <!--fav-icon-->
+    <link rel="icon" href="img/icon.ico">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--css file-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--header section start-->
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>D-T</span>ravel</a>
+    <nav class="navbar">
+        <a href="#home">Beranda</a>
+        <a href="#booking">Booking</a>
+        <a href="#packages">Paket</a>
+        <a href="#services">Servis</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#review">Ulasan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+<!--header section end-->
+
+<!--home section start-->
+<section class="home" id="home">
+    <div class="content">
+        <h3>liburan sangat menyenangkan</h3>
+        <p>temukan tempat menarik untuk dijadikan wisata liburan</p>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="img/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="img/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="img/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+<!--home section end-->
+
+<!--booking section start-->
+<section class="booking" id="booking">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span>i</span>
+        <span>n</span>
+        <span>g</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="img/book-img.svg" alt="">
+        </div>
+        <form action="#booking">
+            <div class="inputbox">
+                <label>tempat kunjungan</label>
+                <input type="text" placeholder="nama tempat" id="namatempat" required>
+            </div>
+            <div class="inputbox">
+                <label>jumlah pengunjung</label>
+                <input type="number"min="1" placeholder="banyak pengunjung" id="banyakpengunjung" required>
+            </div>
+            <div class="inputbox">
+                <label>mulai liburan</label>
+                <input type="date" id="mulai" required>
+            </div>
+            <div class="inputbox">
+                <label>selesai liburan</label>
+                <input type="date" id="selesai" required>
+            </div>
+            <input type="submit" class="btn" value="booking sekarang" onclick="checkBooking()">
+        </form>
+    </div>
+</section>
+<!--booking section end-->
+
+<!--packages section start-->
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>k</span>
+        <span>e</span>
+        <span>t</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="img/p-1.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>tokyo</h3>
+                <p>Tempat wisata luar negeri yang wajib dikunjungi yang pertama adalah Tokyo, Jepang. Masih berada di kawasan benua Asia, Tokyo merupakan sebuah kota padat di Jepang, serta menjadi salah satu destinasi liburan paling favorit.
+                    Memiliki pesona yang sangat menarik, mulai dari alamnya, kota, tempat wisata, budaya, hingga karakter penduduknya, semua memiliki keunikan yang sangat berciri khas.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rp.11.274.000 <span>Rp.11.574.000</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/p-2.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>seoul</h3>
+                <p>Destinasi wisata luar negeri yang wajib dikunjungi berikutnya adalah Seoul, yang terletak di Korea Selatan.Negara yang indah, bersih, dan nyaman ini sering dijadikan tujuan wisata luar negeri yang wajib dikunjungi, khususnya para wisatawan Indonesia.Ada banyak destinasi wisata terkenal yang bisa kamu kunjungi, mulai dari Cheonggyecheon Stream, Namsan Park, Kawasan Hongdae.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.7.372.900 <span>Rp.7.672.900</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/p-3.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>singapura</h3>
+                <p>Bertetanggaan dengan Indonesia, Singapura juga termasuk salah satu negara dengan wisata luar negeri yang wajib dikungjungi. Terlebih, jaraknya yang sangat dekat dengan Indonesia, membuat wisatawan Indonesia tidak terlalu sulit untuk liburan ke sini.Salah satu lokasi yang wajib dikunjungi di Singapura adalah Merlion Park, yang menjadi ikon utama negara Singapura. kemudian ada Orchard Road.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.4.321.400 <span>Rp.4.621.400</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/p-4.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>maladewa</h3>
+                <p>Maladewa kerab dijuluki sebagai sepotong surga yang terdapat di bumi. Maladewa sendiri merupakan negara yang berada di kepulauan Pasifik, yang memiliki keindahan khas tropikal yang memukau.
+                    Saat berkunjung ke sana, kamu akan mendapati indahnya pulau tropis dengan pasir putih alam yang indah dan bersih. Belum lagi, kamu juga bisa mengeksplore keindahan bawah laut sekitar pulau pada negara seluas 700 km ini. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">Rp.11.133.400 <span>Rp.11.433.400</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/p-5.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>tiongkok</h3>
+                <p> taman hutan Nasional Zhangjiajie, Tiongkok. Kawasan wisata yang satu ini telah ditetapkan sebagai Situs Warusan Dunia UNESCO pertama Negeri Tirai Bambu loh.Taman Nasional yang satu ini terdiri dari banyak pilar-pilar tebing yang menjulang tinggi. Pesonanya jadi makin indah tatkala kabut mulai turun yang membuat Zhangjiajie seolah menjadi daratan yang melayang di atas awan.</p>
+                <br>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.3.198.000 <span>Rp.3.498.965</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="img/p-6.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>yordania</h3>
+                <p>pesona keindahan kota batu di Yordania, yakni Petra. Kota Petra merupakan situs berarsitektur megah yang dibangun pada tebing bebatuan. Petra memiliki nuansa keindahan yang tak bisa ditemukan di belahan bumi mana pun.Menariknya lagi, pada saat matahari terbit dan tenggelam, kota ini akan menampilkan pemandangan atau nuansa perkotaan indah yang jauh berbeda.</p>
+                <br>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rp.10.563.000 <span>Rp.10.863.100</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--packages section end-->
+
+<!--service section start-->
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>hotel terjangkau</h3>
+            <p>hotel yang terjangkau,tempat tidur yang nyaman,pelayanan secara maksimal 24 jam setiap hari.WI-FI gratis.memiliki fasilitas menarik antara lain,restaurant,swimming pool,fitness.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-concierge-bell"></i>
+            <i class="fas fa-wine-glass-alt"></i>
+            <h3>makanan dan minuman</h3>
+            <p>pelayanan makanan dan minuman secara profesional.agar dapat memenuhi selera tamu/pengunjung terhadap makanan dan minuman yang diberikan.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>panduan kesehatan</h3>
+            <p>tetap menggunakan masker agar terbebas dari virus covid-19.sediakan sabun cair untuk mencuci tangan.dan jangan lupa untuk jaga jarak</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>jelajahi dunia</h3>
+            <p>bingung mau pergi liburan ke luar negeri?.kunjungi <a href="index.html" title="D-Travel" target="_blank">website saya</a> untuk mengetahui tempat tujuan liburan ke luar negeri.agar bisa mengeksplor di belahan dunia</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>perjalanan cepat</h3>
+            <p>salah satu pelayanan di web D-Travel ini adalah perjalanan cepat.keamanan dan kenyamanan pengunjung juga diutamakan.agar bisa menuju ke lokasi liburan dengan cepat dan selamat.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>berlibur</h3>
+            <p>mengunjungi tempat wisata yang indah dan menarik di berbagai penjuru dunia.bersenang-senang bersama keluarga anda,ataupun teman-teman anda.</p>
+        </div>
+    </div>
+
+</section>
+<!--service section end-->
+
+<!--galery section start-->
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>i</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="img/g-1.jpg" alt="">
+            <div class="content">
+                <h3>tokyo tower</h3>
+                <p>sebuah menara di Taman Shiba dengan ketinggian 332,6 m dan merupakan bangunan baja tertinggi di dunia.Menara Tokyo ini dikenal sebagai simbol dari kota Tokyo dan tempat wisata dari kegunaannya sebagai pemancar TV analog, TV lokal digital dan radio FM.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/g-2.jpg" alt="">
+            <div class="content">
+                <h3>gyeongbokgung palace</h3>
+                <p>sebuah istana yang sangat indah dan keren. Istana ini terletak di sebeleh utara kota Seoul.Istana Gyeongbokgung ini termasuk terbesar dari 5 istana besar yang dibangun dari Dinasti Joseon.Istana ini dibuka sejak tahun 1395 dan merupakan istana yang penuh dengan sejarah dan keindahan.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/g-3.jpg" alt="">
+            <div class="content">
+                <h3>merlion park</h3>
+                <p>memiliki ukuran tinggi 8,6 meter dan berbobot 70 ton.dibangun oleh seniman singapura(Mr.lim Nang Seng).perdana menteri singapura meresmikan upacara pemasangan merlion pada tangggal 15 september 1972.sebuah prasasti perungu mengabadikan peristiwa tersebut</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/g-4.jpg" alt="">
+            <div class="content">
+                <h3>pulau vaadhoo</h3>
+                <p>pulau yang populasi penduduknya kurang lebih 500 orang ini terkenal dengan pesona alam memikat.Sebuah fenomena alam yang menjadi daya tarik bagi para wisatawan adalah adanya phytoplankton yang bersifat memancarkan cahaya cukup terang.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/g-5.jpg" alt="">
+            <div class="content">
+                <h3>tembok raksasa</h3>
+                <p>Tembok yang dibuat sekitar abad ke 5-7 sebelum masehi ini merupakan sebuah benteng pertahanan. Ketinggian benteng ini tidak rata, ada yang enam sampai delapan meter, hingga 16 meter, bergantung dengan kontur pegunungannya. Tembok ini dibangun oleh beberapa dinasti yang berkuasa.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/g-6.jpg" alt="">
+            <div class="content">
+                <h3>petra</h3>
+                <p>kota yang didirikan dengan memahat dinding-dinding batu di Yordania. Petra berasal dari bahasa Yunani yang berarti 'batu'. Petra merupakan simbol teknik dan perlindungan. Kata ini merujuk pada bangunan kotanya yang terbuat dari batu-batu di Wadi Araba, sebuah lembah bercadas di Yordania.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--galery section end-->
+
+<!--review section start-->
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>u</span>
+        <span>l</span>
+        <span>a</span>
+        <span>s</span>
+        <span>a</span>
+        <span>n</span>
+    </h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img/pic1.jpg" alt="">
+                    <h3>Naufal Zaki Akbar</h3>
+                    <h3>(Teknik Elektro)</h3>
+                    <p>website yang cukup menarik,desain yang elegan.membuat pada visitor/pengunjung website ini merasa nyaman.dan di website ini informasi yang diberikan lumayan detail.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img/pic2.jpg" alt="">
+                    <h3>Akhiril Anwar</h3>
+                    <h3>(Sistem Informasi)</h3>
+                    <p>saya menyukai web-nya,dari segi tampilanya dan detail dari button nya juga keren.hanya saja kekurangan fitur akun untuk login ke web ini.sangat responsive</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img/pic3.jpg" alt="">
+                    <h3>Azril Habib</h3>
+                    <h3>(Teknik Industri)</h3>
+                    <p>web nya bagus,cuman lebih keren jika ditambah fitur light mode/dark mode.dan juga ditambahin fitur akun,supaya user bisa login.simple but amazing.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img/pic4.jpg" alt="">
+                    <h3>Reynaldy Putra</h3>
+                    <h3>(Ekonomi Syariah)</h3>
+                    <p>web nya simple tapi menarik.desain nya cukup bagus.hanya saja kekurangan fitur search.agar pengguna bisa lebih cepat mengakses pencarian tempat liburan</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--review section end-->
+
+<!--contact section start-->
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>k</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>k</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="img/contact-img.svg" alt="">
+        </div>
+        <form action="#contact">
+            <div class="inputBox">
+                <input type="text" placeholder="nama" id="nama" required>
+                <input type="email" placeholder="email" id="email" required>
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="nomor hp" id="nohp" required>
+                <input type="text" placeholder="subjek" id="subjek" required>
+            </div>
+            <textarea placeholder="komentar" name="" id="komen" cols="30" rows="10" required></textarea>         
+            <input type="submit" class="btn" value="kirim komentar" onclick="checkKomentar()">
+        </form>
+    </div>
+</section>
+<!--contact section end-->
+
+<!--footer section-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about me</h3>
+            <p>nama saya muhammad dio revansa.dari universitas uin suska riau.ini merupakan tugas project uas pemrograman web yaitu membuat website.disini saya membuat website travel.</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <p>India</p>
+            <p>USA</p>
+            <p>Japan</p>
+            <p>France</p>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">Beranda</a>
+            <a href="booking">Booking</a>
+            <a href="#packages">Paket</a>
+            <a href="#services">Servis</a>
+            <a href="#gallery">Galeri</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        <div class="box">
+            <h3>follow me</h3>
+            <a href="https://www.facebook.com/profile.php?id=100009430157672" target="_blank">facebook</a>
+            <a href="https://www.instagram.com/mhdiorevansa_/" target="_blank">instagram</a>
+            <a href="https://twitter.com/?lang=en-id" target="_blank">twitter</a>
+            <a href="https://www.youtube.com/channel/UCdThLMkvtheRzwg0WnIbM_g" target="_blank">you tube</a>
+        </div>
+    </div>
+    <h1 class="credit">created by <span>Muhammad Dio revansa</span> | all rights reserved!</h1>
+</section>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<!--js file-->
+<script src="js/script.js"></script>
+
+</body>
+</html>
