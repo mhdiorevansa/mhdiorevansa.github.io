@@ -495,7 +495,17 @@ a {
     color: var(--orange);
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
 
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--orange);
+}
 
 body {
     height: 300rem;
