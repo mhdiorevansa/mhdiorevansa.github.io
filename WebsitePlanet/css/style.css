@@ -1,0 +1,466 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  list-style: none;
+  box-sizing: border-box;
+  background: #000;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  height: 8vh;
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav .nav-links ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .nav-links ul li {
+  padding: 0 4px;
+  list-style: none;
+}
+
+nav .nav-links ul li img {
+  transform: scale(0.45);
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg img {
+  width: 110vw;
+  height: 110vh;
+  filter: brightness(0.6);
+}
+
+.rock1 {
+  position: absolute !important;
+  left: 10vw !important;
+  top: 20vh !important;
+}
+
+.rock1 img {
+  width: 40%;
+  filter: brightness(0.5);
+}
+
+.text h1 {
+  font-family: "AlphaCentauri" !important;
+  font-size: 5vw;
+  color: #fff;
+  letter-spacing: 20px;
+  position: absolute;
+  top: 35vh;
+  left: 34vw;
+}
+
+.earth img {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 34vw;
+  top: 25vh;
+  z-index: 1;
+  filter: brightness(0.7);
+}
+
+.mid {
+  left: -150px !important;
+  bottom: -100px !important;
+  top: unset !important;
+}
+
+.mid img {
+  width: 100%;
+  z-index: 2;
+  left: -20px;
+  top: 20vh !important;
+  filter: brightness(0.8);
+}
+
+.fore {
+  right: -50px !important;
+  bottom: -200px !important;
+  top: 0px !important;
+  left: unset !important;
+}
+
+.fore img {
+  width: 400px;
+  height: 110vh;
+  z-index: 3;
+  filter: brightness(0.5);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: skyblue;
+}
+
+/*SWIPER*/
+
+#sectiontwo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(to bottom, #020111 60%, #20202c 100%);
+}
+
+.planet-links {
+  width: 95%;
+  height: 5vh;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.planet-links .swiper-pagination-bullet {
+  opacity: 0.2;
+  outline: none;
+}
+
+.planet-links .swiper-pagination-bullet-active {
+  color: #fff;
+  opacity: 1;
+}
+
+.swiper-pagination-clikable .swiper-pagination-bullet {
+  background: transparent;
+}
+
+.swiper-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px 0;
+}
+
+.swiper-wrapper {
+  transition-delay: 0.5s;
+}
+
+.swiper-slide {
+  height: 400px !important;
+  width: 90% !important;
+  background: transparent;
+}
+
+.swiper-slide:nth-child(1) .slide-img {
+  background-image: url('../images/mercury.png');
+  margin-top: -3%;
+  margin-left: 2%;
+}
+
+.swiper-slide:nth-child(2) .slide-img {
+  background-image: url('../images/venus.png');
+  margin-top: -2%;
+  margin-left: 2%;
+}
+
+.swiper-slide:nth-child(3) .slide-img {
+  background-image: url('../images/earth.png');
+  width: 25%;
+  margin-top: -2%;
+  margin-left: 3%;
+}
+
+.swiper-slide:nth-child(4) .slide-img {
+  background-image: url('../images/mars.png');
+  margin-top: -2%;
+  margin-left: 2%;
+}
+
+.swiper-slide:nth-child(5) .slide-img {
+  background-image: url('../images/jupiter.png');
+  margin-top: -1%;
+  margin-left: 2%;
+  width: 28%;
+}
+
+.swiper-slide:nth-child(6) .slide-img {
+  background-image: url('../images/saturn.png');
+  margin-top: -2%;
+  width: 29%;
+}
+
+.swiper-slide:nth-child(7) .slide-img {
+  background-image: url('../images/uranus.png');
+  margin-top: -2%;
+  width: 30%;
+}
+
+.swiper-slide:nth-child(8) .slide-img {
+  background-image: url('../images/neptune.png');
+  margin-top: -2%;
+}
+
+.slide-img {
+  background-position: left;
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  width: 50%;
+  height: 100%;
+  margin-top: -10%;
+}
+
+.slide-number {
+  position: absolute;
+  top: -30px;
+  left: 30%;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.slide-number p {
+  font-size: 40px;
+  font-family: "AlphaCentauri" !important;
+  color: #fff;
+  position: relative;
+}
+
+.slide-number p span {
+  position: absolute;
+  text-decoration: underline;
+}
+
+.slide-detail {
+  position: absolute;
+  top: 130px;
+  left: 30%;
+  z-index: 10;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.slide-detail p {
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  opacity: 0.8;
+  line-height: 30px;
+  margin-left: 20%;
+}
+
+.slide-detail p span {
+  position: absolute;
+}
+
+
+
+
+/*responsive*/
+
+@media(max-width:600px) {
+  section .text h1 {
+    font-size: 10vw;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-left: -15px;
+  }
+
+  nav .nav-links ul {
+    margin-left: -20%;
+  }
+
+  .bg img {
+    object-fit: cover;
+    margin: -1%;
+  }
+
+  .fore img {
+    height: 40vh;
+  }
+
+  .mid img {
+    margin-bottom: 140px;
+    object-fit: cover;
+  }
+
+  .slide-detail {
+    width: 55%;
+  }
+
+  .slide-detail p {
+    margin-left: 25%;
+    font-size: 3.6vw;
+    text-align: justify;
+  }
+
+  .slide-number p {
+    font-size: 8vw;
+    margin-left: -2%;
+    bottom: -50%;
+  }
+
+  .planet-links {
+    display: none;
+  }
+
+  .swiper-slide:nth-child(1) .slide-img {
+    margin-left: -15%;
+    width: 59%;
+  }
+
+  .swiper-slide:nth-child(2) .slide-img {
+    width: 40%;
+    margin-left: -5%;
+  }
+
+  .swiper-slide:nth-child(4) .slide-img {
+    width: 40%;
+    margin-left: -5%;
+  }
+
+  .swiper-slide:nth-child(8) .slide-img {
+    width: 35%;
+    margin-left: -2%;
+  }
+}
+
+@media(max-width:485px) {
+  .rock1 img {
+    width: 25%;
+  }
+
+  .slide-detail p span {
+    font-size: 4vw;
+  }
+
+  .slide-detail {
+    width: 60%;
+    top: 25%;
+  }
+
+  .slide-number p {
+    top: 15%;
+  }
+}
+
+@media(max-width:340px) {
+  .fore img {
+    display: none;
+  }
+
+  .mid img {
+    width: 120%;
+  }
+
+  .slide-number p {
+    top: 25%;
+  }
+
+  .slide-detail p span {
+    font-size: 4vw;
+  }
+}
+
+@media(max-width:900px) {
+  section .text h1 {
+    font-size: 7vw;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  nav .nav-links ul {
+    margin-left: -20%;
+  }
+
+  .bg img {
+    object-fit: cover;
+    margin: -1%;
+  }
+
+  .fore img {
+    margin-right: -6rem;
+    margin-bottom: -66rem;
+    height: 40vh;
+  }
+
+  .mid img {
+    margin-bottom: 100px;
+    margin-left: 60px;
+    object-fit: cover;
+
+  }
+
+  .slide-detail {
+    width: 55%;
+  }
+
+  .slide-detail p {
+    margin-left: 25%;
+    font-size: 3vw;
+    text-align: justify;
+  }
+
+  .slide-number {
+    width: 35%
+  }
+
+  .slide-number p {
+    font-size: 8vw;
+    margin-left: -2%;
+    bottom: 30%;
+  }
+
+  .planet-links {
+    display: none;
+  }
+
+  .swiper-slide:nth-child(1) .slide-img {
+    margin-left: -15%;
+    width: 59%;
+  }
+
+  .swiper-slide:nth-child(2) .slide-img {
+    width: 40%;
+    margin-left: -5%;
+  }
+
+  .swiper-slide:nth-child(4) .slide-img {
+    width: 40%;
+    margin-left: -5%;
+  }
+
+  .swiper-slide:nth-child(8) .slide-img {
+    width: 35%;
+    margin-left: -2%;
+  }
+}
+
+@media(max-width:750px) {
+  .slide-number p {
+    bottom: 10%;
+  }
+}
